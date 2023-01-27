@@ -10,6 +10,7 @@ class ShoppingCartPage():
     logo_homepage_xpath = "//img[@alt='nopCommerce demo store']"
     btn_checkout_id = "checkout"
     checkbox_termsconf_name = "termsofservice"
+    text_total_xpath = "//tr[@class='order-total']//span[@class='value-summary']"
 
 #constructor:
     def __init__(self,driver):
@@ -34,3 +35,9 @@ class ShoppingCartPage():
 
     def terms_conf_click(self):
         self.driver.find_element(By.NAME, self.checkbox_termsconf_name).click()
+
+    def total_price(self):
+        try:
+            return self.driver.find_element(By.XPATH, self.text_total_xpath).text
+        except:
+            None

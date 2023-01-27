@@ -213,28 +213,36 @@ class ReadConfig():
         confirmpwd = (config.get('commonInfo', 'confirmpwd'))
         return confirmpwd
 
-#My Account > Downloadable products
+    @staticmethod
+    def ccy():
+        ccy = (config.get('commonInfo', 'ccy'))
+        return ccy
 
     @staticmethod
-    def first_dp():
-        first_dp = (config.get('commonInfo', 'first_dp'))
-        return first_dp
+    def poll():
+        poll = (config.get('commonInfo', 'poll'))
+        return poll
 
     @staticmethod
-    def last_dp():
-        last_dp = (config.get('commonInfo', 'last_dp'))
-        return last_dp
+    def name_contact():
+        name_contact = (config.get('commonInfo', 'name_contact'))
+        return name_contact
 
     @staticmethod
-    def email_dp():
-        email_dp = (config.get('commonInfo', 'email_dp'))
-        return email_dp
+    def email_contact():
+        email_contact = (config.get('commonInfo', 'email_contact'))
+        return email_contact
 
     @staticmethod
-    def password_dp():
-        password_dp = (config.get('commonInfo', 'password_dp'))
-        return password_dp
+    def enquiry_contact():
+        enquiry_contact = (config.get('commonInfo', 'enquiry_contact'))
+        return enquiry_contact
 
+    @staticmethod
+    def recently_viewed():
+        recently_viewed = (config.get('commonInfo', 'recently_viewed'))
+        items_list = recently_viewed.split(",\n")
+        return items_list
 
 
 # print(ReadConfig.getApplicationURL())

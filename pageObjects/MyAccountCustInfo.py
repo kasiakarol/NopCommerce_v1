@@ -10,7 +10,8 @@ class MyAccountCustInfo():
     link_orders_xpath = "//li[@class='customer-orders inactive']//a[normalize-space()='Orders']"
     link_downloadableprod_xpath = "//a[normalize-space()='Downloadable products']"
     link_backinstock_xpath = "//a[normalize-space()='Back in stock subscriptions']"
-
+    link_myreviews_xpath = "//a[normalize-space()='My product reviews']"
+    link_reward_xpath = "//a[normalize-space()='Reward points']"
 
 #constructor:
     def __init__(self,driver):
@@ -34,3 +35,8 @@ class MyAccountCustInfo():
     def back_in_stock_click(self):
         self.driver.find_element(By.XPATH, self.link_backinstock_xpath).click()
 
+    def reviews_click(self):
+        self.driver.find_element(By.XPATH, self.link_myreviews_xpath).click()
+
+    def reward_click(self):
+        self.driver.find_element(By.XPATH, self.link_reward_xpath).click()

@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
+from selenium.webdriver.support.select import Select
 
 class MainPage():
 #locators:
@@ -18,7 +19,15 @@ class MainPage():
     link_news_xpath = "//a[normalize-space()='News']"
     link_myaccount_linktext = "My account"
     catpage_digitaldownl_xpath = "//ul[@class='top-menu notmobile']//a[normalize-space()='Digital downloads']"
-
+    dpd_currency_xpath = "//select[@id='customerCurrency']"
+    rb_poll_excellent_id = "pollanswers-1"
+    rb_poll_good_id = "pollanswers-2"
+    rb_poll_poor_id = "pollanswers-3"
+    rb_poll_verybad_id = "pollanswers-4"
+    poll_errormsg_xpath = "//div[@id='block-poll-vote-error-1']"
+    btn_poll_vote_xpath = "//button[@id='vote-poll-1']"
+    link_contact_us_xpath = "//a[normalize-space()='Contact us']"
+    link_recently_viewed_xpath = "//a[normalize-space()='Recently viewed products']"
 
 #constructor:
     def __init__(self,driver):
@@ -71,4 +80,34 @@ class MainPage():
     def catpage_digital_downloads(self):
         self.driver.find_element(By.XPATH, self.catpage_digitaldownl_xpath).click()
 
+    def change_currency(self, ccy):
+        self.set_ccy = Select(self.driver.find_element(By.XPATH,self.dpd_currency_xpath))
+        self.set_ccy.select_by_visible_text(ccy)
+
+    def setPollExcellent(self):
+        self.driver.find_element(By.ID, self.rb_poll_excellent_id).click()
+
+    def setPollGood(self):
+        self.driver.find_element(By.ID, self.rb_poll_good_id).click()
+
+    def setPollPoor(self):
+        self.driver.find_element(By.ID, self.rb_poll_poor_id).click()
+
+    def setPollVerybad(self):
+        self.driver.find_element(By.ID, self.rb_poll_verybad_id).click()
+
+    def poll_vote_click(self):
+        self.driver.find_element(By.XPATH, self.btn_poll_vote_xpath).click()
+
+    def poll_error_msg(self):
+        try:
+            return self.driver.find_element(By.XPATH, self.poll_errormsg_xpath).text
+        except:
+            None
+
+    def contact_us_click(self):
+        self.driver.find_element(By.XPATH, self.link_contact_us_xpath).click()
+
+    def recently_viewed_click(self):
+        self.driver.find_element(By.XPATH, self.link_recently_viewed_xpath).click()
 
