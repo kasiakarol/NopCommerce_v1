@@ -64,9 +64,13 @@ class Test_015_Checkout():
         self.cop.zipcode(self.zipcode)
         self.cop.phonenum(self.phonenum)
         self.cop.faxnum(self.faxnum)
-        time.sleep(1)
-
         self.cop.continue_click()
+
+        try:
+            if self.cop.shipping_method() == "Shipping method":
+                self.cop.continue_shipping_click()
+        except:
+            None
 
         self.cop.payment_creditcard_click()
         self.cop.continue4_click()

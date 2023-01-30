@@ -23,6 +23,7 @@ class CheckoutPage():
     btn_continue_xpath = "//button[@onclick='Billing.save()']"
 
 # Shipping method
+    title_shippingmethod_xpath = "//h2[normalize-space()='Shipping method']"
     rb_ground_xpath = "//input[@id='shippingoption_0']"
     rb_nextdayair_xpath = "//input[@id='shippingoption_1']"
     rb_2nddayair_xpath = "//input[@id='shippingoption_2']"
@@ -105,6 +106,15 @@ class CheckoutPage():
     def continue_click(self):
         self.driver.find_element(By.XPATH, self.btn_continue_xpath).click()
 
+# Shipping method
+    def shipping_method(self):
+        try:
+            return self.driver.find_element(By.XPATH, self.title_shippingmethod_xpath).text
+        except:
+            None
+
+    def continue_shipping_click(self):
+        self.driver.find_element(By.XPATH, self.btn_continue3_xpath).click()
 
 # Payment method
 

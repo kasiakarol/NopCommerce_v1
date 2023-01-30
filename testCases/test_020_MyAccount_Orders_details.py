@@ -92,6 +92,12 @@ class Test_020_MyAccountOrdersDetails():
             time.sleep(1)
             self.cop.continue_click()
 
+        try:
+            if self.cop.shipping_method() == "Shipping method":
+                self.cop.continue_shipping_click()
+        except:
+            None
+
         self.cop.payment_creditcard_click()
         self.cop.continue4_click()
 
