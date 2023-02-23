@@ -7,7 +7,7 @@ from utilities.readProperties import ReadConfig
 import pytest
 from utilities import randomeString
 
-# TC - Validate logging into the application, using valid credentials
+# TC_LF_001 - Validate logging into the application, using valid credentials
 # Pre-requisites - user is registered - part of the test case.
 
 

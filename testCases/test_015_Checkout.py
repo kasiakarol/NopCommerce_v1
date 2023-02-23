@@ -8,7 +8,7 @@ from pageObjects.CheckoutPage import CheckoutPage
 from utilities.readProperties import ReadConfig
 import pytest
 
-# TC 016 - validate checkout as a guest - fill in all the fields
+# TC_CO_011 - Validate guest checkout
 
 class Test_015_Checkout():
     baseURL = ReadConfig.getApplicationURL()

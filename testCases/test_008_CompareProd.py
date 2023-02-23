@@ -6,8 +6,9 @@ import os
 from pageObjects.CompareProdPage import CompareProdPage
 import pytest
 
-# Validate Compare Product page when more than 2 products are added for comparison
+# TC_PC_013 - Validate the 'Compare Products' page when more than 2 products are added to the page for comparison
 # It adds 3 products to Compare List page and validates if all requested products exist in product comparison table
+
 
 class Test_008_CompareProd():
     baseURL = ReadConfig.getApplicationURL()

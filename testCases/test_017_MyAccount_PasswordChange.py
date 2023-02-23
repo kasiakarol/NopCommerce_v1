@@ -9,7 +9,7 @@ from utilities.readProperties import ReadConfig
 from utilities import randomeString
 import pytest
 
-# TC_006 - Validate entering different password into the 'Password' and 'Password Confirm' fields while changing password
+# TC_CP_004 - Validate entering different password into the 'Password' and 'Password Confirm' fields while changing password
 # Pre-requisites - user is registered.
 
 class Test_017_PasswordChange():

@@ -14,7 +14,7 @@ from utilities.readProperties import ReadConfig
 from utilities import randomeString
 import pytest
 
-# TC - validates printing invoice in pdf for order from My Account > Orders > Details
+# TC_OI_004 - validate 'print' functionality in 'Order details' page
 
 # Pre-requisites - user is registered - part of the test case.
 

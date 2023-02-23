@@ -4,8 +4,10 @@ from pageObjects.SearchPage import SearchPage
 from utilities.readProperties import ReadConfig
 import os
 import pytest
-# TC - Validate searching with an existing product name
+
+# TC_SF_001 - Validate searching with an existing product name
 # It is searching for an existing item and checks if this item exists in the list of the displayed items
+
 
 class Test_007_Search():
     baseURL = ReadConfig.getApplicationURL()

@@ -5,7 +5,8 @@ from utilities.readProperties import ReadConfig
 import os
 import pytest
 
-# TC - Validate using Forget Password functionality for invalid email address
+# TC_FP_004 - Validate resetting the password for a non-registered account
+
 
 class Test_006_ForgotPasswordNeg():
     baseURL = ReadConfig.getApplicationURL()

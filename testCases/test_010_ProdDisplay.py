@@ -6,8 +6,9 @@ from pageObjects.ProdDisplayPage import ProdDisplayPage
 from utilities.readProperties import ReadConfig
 import pytest
 
-# TC - Validate product name, product code and the picture on Product Display page
+# TC_PDP_001 - Validate that product name, product code and main picture are displayed on the Product Display page
 # It also saves a screenshot of the product's main picture
+
 
 class Test_010_ProdDisplay():
     baseURL = ReadConfig.getApplicationURL()

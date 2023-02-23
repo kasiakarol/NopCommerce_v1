@@ -13,7 +13,7 @@ from utilities.readProperties import ReadConfig
 from utilities import randomeString
 import pytest
 
-# TC-015 - Validate new address given for Billing Details while placing the order should get added to My Account > Addresses
+# TC_AB_011 - Validate new address given for Billing Details while placing the order should get added in Addresses page
 
 # Test is checking if there are any addresses saved in user's account > addresses. If so, it's deleting them.
 # Then it's placing the order and validating if the address provided is saved in My Account > Addresses

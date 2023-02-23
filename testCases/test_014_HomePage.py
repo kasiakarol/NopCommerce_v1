@@ -7,7 +7,8 @@ from pageObjects.ProdDisplayPage import ProdDisplayPage
 from pageObjects.NewsPage import NewsPage
 from utilities.readProperties import ReadConfig
 
-# TC003 - going back to the home page from any application using logo.
+# TC_HP_003 - Validate navigating to Home Page from any page of the application using logo.
+
 # verified for Search page, Shopping Cart, Product Display page, News Page
 
 class Test_014_HomePage():

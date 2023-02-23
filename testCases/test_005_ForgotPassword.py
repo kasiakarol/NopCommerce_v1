@@ -7,8 +7,9 @@ import os
 import pytest
 from utilities import randomeString
 
-# TC - Validate using Forget Password functionality
+# TC_FP_001 - Validate whether user is able to reset the password
 # Pre-requisites - user is registered - part of the test case.
+
 
 class Test_005_ForgotPassword():
     baseURL = ReadConfig.getApplicationURL()

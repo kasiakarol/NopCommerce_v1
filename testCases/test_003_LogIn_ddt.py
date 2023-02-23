@@ -6,8 +6,7 @@ from pageObjects.AccountRegistrationPage import AccountRegistrationPage
 from utilities import XLUtils
 from utilities.readProperties import ReadConfig
 
-
-# TC_002 - Validate login to the application using invalid credentials
+# TC_LF_002 Validate login to the application using invalid credentials
 # This test case use data driven testing with Excel
 
 

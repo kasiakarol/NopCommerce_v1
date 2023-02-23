@@ -10,13 +10,13 @@ from utilities.readProperties import ReadConfig
 import pytest
 from utilities import randomeString
 
-# TC - Validate 'Add your review' link under the product's description on the 'Product Display' page
+# TC_PDP_008 - Validate the user is able to write a review for the product from the 'Add your review' tab of Product Display Page
+
 # It takes 'search_item' product, and tries to add a review. It can be only added by a registered user it logs the user in
 # The review is added, by filling in 'title' and 'text' text boxes and by choosing 'rating' radio button.
 # After the review is submitted, the test validates if the confirmation message is correct
 
 # Pre-requisites - user is registered - part of the test case.
-
 class Test_011_ProdDisplayAddReview():
     baseURL = ReadConfig.getApplicationURL()
     search_item = ReadConfig.searchItem()

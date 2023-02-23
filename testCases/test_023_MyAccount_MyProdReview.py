@@ -13,7 +13,8 @@ import os
 import time
 
 
-# TC - validate My Account > 'My product reviews' page, when the user added a review of the product
+# TC_PR_003 - validate 'My product reviews' page when the user has submitted one review
+
 # It checks title, text and rating of the review
 
 # Pre-requisites - user is registered - part of the test case.

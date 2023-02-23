@@ -6,7 +6,7 @@ from utilities.readProperties import ReadConfig
 import pytest
 from utilities import randomeString
 
-# TC - Validate log out from the application
+# TC_LG_001 - Validate log out from the application
 # Pre-requisites - user is registered - part of the test case.
 
 

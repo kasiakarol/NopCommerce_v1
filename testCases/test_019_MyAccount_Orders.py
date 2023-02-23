@@ -13,7 +13,7 @@ from utilities.readProperties import ReadConfig
 from utilities import randomeString
 import pytest
 
-# TC-006 ->  Validate the order made is displayed in the 'Order History' page
+# TC_OH_002 - Validate all the orders made till date are displayed in the 'Orders' page
 
 # Pre-requisites - user is registered - part of the test case.
 

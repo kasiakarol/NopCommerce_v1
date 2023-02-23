@@ -1,5 +1,4 @@
 import os
-import time
 from pageObjects.HomePage import MainPage
 from pageObjects.SearchPage import SearchPage
 from pageObjects.ShoppingCartPage import ShoppingCartPage
@@ -7,7 +6,8 @@ from pageObjects.ProdDisplayPage import ProdDisplayPage
 from utilities.readProperties import ReadConfig
 import pytest
 
-# TC_008 - updating the quantity of in the shopping cart
+# TC_SC_006 - validate updating the quantity of the product in the 'Shopping Cart' page
+
 # checking the functionality of adding the product to the shopping cart.
 # then changing the quantity, clicking on update changes
 # test case will check if the quantity of the product matches with the requested quantity
@@ -47,6 +47,3 @@ class Test_013_ShoppingCart():
             self.driver.save_screenshot(os.path.abspath(os.curdir) + "\\screenshots\\" + "test_qtyupdate.png")
             self.driver.close()
             assert False
-
-
-

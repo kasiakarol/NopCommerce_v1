@@ -8,7 +8,7 @@ import pytest
 from utilities import randomeString
 import os
 
-# TC 006 - validate the page when user did not receive any back in stock products.
+# TC 006 - validate 'Back in stock' page where the user has not received any feedback about back in stock products
 
 # Pre-requisites - user is registered - part of the test case.
 

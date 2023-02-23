@@ -14,7 +14,7 @@ from utilities import randomeString
 import time
 import os
 
-# TC 006 - validate 'downloadable products' page where the user placed few downloadable products
+# TC_DL_003 - validate 'downloadable products' page where the user placed few downloadable products
 
 # Pre-requisites - user is registered - part of the test case.
 

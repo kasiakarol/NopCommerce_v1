@@ -6,7 +6,9 @@ from utilities.readProperties import ReadConfig
 import os
 from selenium.webdriver.common.by import By
 import pytest
-# TC01 - Validate adding the product to Cart from 'Product Display' page
+
+# TC_ATC_001 - Validate adding the product to Cart from 'Product Display' page
+
 
 class Test_009_AddToCart():
     baseURL = ReadConfig.getApplicationURL()

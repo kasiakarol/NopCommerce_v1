@@ -8,7 +8,7 @@ import time
 import pytest
 from utilities import randomeString
 
-# TC_011 - Validate Page Heading, Page Title and Page URL in the 'My Account Information' page
+# TC_MAI_007 - Validate Page Heading, Page Title and Page URL in the 'Customer info' page
 
 # Pre-requisites - user is registered - part of the test case.
 

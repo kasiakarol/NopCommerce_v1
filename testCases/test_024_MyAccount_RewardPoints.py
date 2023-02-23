@@ -14,7 +14,7 @@ import os
 import time
 
 
-# TC_001 - validate navigating to 'Reward points' from 'My account' page
+# TC_RP_001 - validate navigating to 'Reward points' from 'My account' page
 
 # Pre-requisites - user is registered - part of the test case.
 

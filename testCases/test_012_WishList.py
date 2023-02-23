@@ -7,7 +7,8 @@ from pageObjects.WishlistPage import WishlistPage
 from utilities.readProperties import ReadConfig
 import pytest
 
-# TC_015 - Validate removing product from 'Wishlist' page
+# TC_WL_010 - Validate removing the product from 'Wishlist' page
+
 # It is adding 'wishlist_to_add' elements from config.ini to the wishlist using a for loop.
 # Then by using dynamic xpath, it's deleting one product defined as 'wishlist_to_delete' object
 # As a confirmation, it's checking if the deleted product doesn't exist in the Wishlist table.
