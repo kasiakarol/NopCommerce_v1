@@ -7,7 +7,7 @@ from utilities.readProperties import ReadConfig
 import os
 from selenium.webdriver.common.by import By
 import pytest
-# TC01 - Validate adding the product to Cart from 'Product Display' page
+# TC_CR_001 - Validate the complete functionality of the application by selecting 'EUR' currency - 'Add to cart' func.
 
 class Test_025_AddToCartEUR():
     baseURL = ReadConfig.getApplicationURL()

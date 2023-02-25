@@ -4,7 +4,7 @@ from pageObjects.ContactUsPage import ContactUs
 import pytest
 import os
 
-# TC 006 - Validate submitting the 'Contact Us' form by proiding all the details.
+# TC_CU_004 - Validate submitting the 'Contact Us' form by providing all the details.
 
 class Test_027_ContactUs():
     baseURL = ReadConfig.getApplicationURL()

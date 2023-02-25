@@ -7,8 +7,7 @@ from pageObjects.RecentlyViewed import RecentlyViewedPage
 from utilities.readProperties import ReadConfig
 import pytest
 
-# TC_015 - Validate 'Recently Viewed Products' page
-
+# TC_RV_004 - Validate 'Recently viewed products' functionality when the User has reviewed some products
 
 class Test_028_RecentlyViewed():
     baseURL = ReadConfig.getApplicationURL()
@@ -40,6 +39,4 @@ class Test_028_RecentlyViewed():
             self.driver.save_screenshot(os.path.abspath(os.curdir) + "\\screenshots\\" + "recently_viewed.png")
             self.driver.close()
             assert False
-
-
 

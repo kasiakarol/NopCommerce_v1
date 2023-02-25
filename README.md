@@ -1,7 +1,7 @@
 Selenium with Python E-commerce automation project
 ---------------------------------------------------
 
-The purpose of the project is to automate one or two test cases from each of the 26 test scenarios for the E-Commerce demo application: "https://demo.nopcommerce.com/". 
+The purpose of the project is to automate one or two test cases from each of the 25 test scenarios for the E-Commerce demo application: "https://demo.nopcommerce.com/". 
 A list of test scenarios with the corresponding test cases can be found in "NopCommerce-TestCases" sheet.
 
 The framework of the project was part of the "Learn Selenium with Python, PyTest + Live Project" course I completed.  

@@ -4,9 +4,8 @@ from pageObjects.SearchPage import SearchPage
 from utilities.readProperties import ReadConfig
 import os
 import pytest
-# TC - Validate the working of 'Community poll' functionality
-# It validates 'Community poll' functionality for the unregistered user that is not allowed to vote
 
+# TC_CP_004 - Validate 'Community poll' for unregistered user
 
 class Test_026_CommunityPoll():
     baseURL = ReadConfig.getApplicationURL()
@@ -36,6 +35,6 @@ class Test_026_CommunityPoll():
             assert True
             self.driver.close()
         else:
-            self.driver.save_screenshot(os.path.abspath(os.curdir) + "\\screenshots\\" + "test_comunnity_poll.png")
+            self.driver.save_screenshot(os.path.abspath(os.curdir) + "\\screenshots\\" + "test_community_poll.png")
             self.driver.close()
             assert False
